@@ -1,0 +1,166 @@
+body, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+    background-image: linear-gradient(to right,rgb(234, 228, 241), #8c6dac);
+}
+
+h1 {
+  color: #56327d;
+      text-align: center;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  .nav-ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #a37de1;
+  }
+  
+  .nav {
+    display: inline;
+    float: left;
+    background-color: #a37de1;
+  }
+  
+  .nav a {
+    display: block;
+    padding: 14px 16px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  .nav a:hover {
+    background-color: #56327d;
+  }
+
+  li {
+    display: inline; 
+    color: #56327d;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+  }
+
+  /*.edit-pt-form {
+    width: 60%;
+    margin: auto;
+  }
+      /*padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      text-align: center;
+      align-items: center;
+      font-size: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #56327d;
+  }*/
+  .message {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(101, 173, 245);
+    font-size: 18px;
+    margin: 5px 10px;
+  }
+
+  #edit-pt {
+    text-align: center;
+  }
+
+  .form-label {
+    display: block;
+    margin: 5px 10px;
+    color:#56327d;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+  }
+
+  .form-control {
+    width: 70%;
+    padding:8px;
+    box-sizing: border-box;
+  }
+  
+  #save-pt {
+    align-items: center;
+    width: 12%;
+    position: relative; 
+    top: 10%; 
+    background-color: #a37de1;
+    color: white;
+    padding: 14px 40px;
+    margin: 8px 20px;
+    border: none;
+    font-size: 14px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+
+  #save-pt:hover {
+    background-color: #56327d;
+  }
+
+  #delete-pt {
+    align-items: center;
+    width: 18%;
+    position: relative;
+    top:10%;
+    background-color: rgb(226, 22, 29);
+    color: white;
+    padding: 14px 30px;
+    margin: 20px 20px;
+    border: none;
+    font-size: 14px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+
+  #delete-pt:hover {
+    background-color: rgb(150, 10, 15);
+  }
+
+  /* Style inputs */
+  input[type=text] {
+      width: 50%;
+      padding: 12px 20px;
+      margin: 8px 10px;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 20px;
+      box-sizing: border-box;
+      text-align: center;
+      align-items: center;
+      font-size: 20px;
+    }
+
+    preferred-days, #preferred-times {
+        justify-content: left;
+        margin: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    /* Style the submit button */
+    /*input[type=submit] {
+      width: 50%;
+      background-color: #a37de1;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      font-size: 20px;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+    
+    /* Add a background color to the submit button on mouse-over */
+    /*input[type=submit]:hover {
+      background-color: #56327d;
+    } 

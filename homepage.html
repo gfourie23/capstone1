@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/calendar.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.0/css/all.css">
+    <title>Calendar</title>
+</head>
+<body>
+    <ul>
+        <li><a href="/add-pt">Add a Patient</a></li>
+        <li><a href="/pt-list">Patient List</a></li>
+        <li><a href="{{url_for('logout')}}">Logout</a></li>
+        <!--<li class="title"><i class="fa-solid fa-mountain-sun fa-lg" style="color: #872de1;">
+        </i>Pinnacle Planner</li>-->
+      </ul>
+
+      <h1>Schedule</h1>
+
+      <!-- <div class="cal-container">
+        <iframe src="https://calendar.google.com/calendar/embed?src=38548fc33eba6c5b2b0d424e6fa144084a3ccf33be3b4e3d92b9b51389d317de%40group.calendar.google.com&ctz=America%2FDenver" style="border:0" width="800" height="600" frameborder="0" scrolling="no">
+        </iframe>
+      </div> -->
+
+      <!-- Calendly inline widget begin -->
+<div class="calendly-inline-widget" data-url="https://calendly.com/graciafourie/pt-visit?primary_color=5b09fa" style="min-width:320px;height:700px;"></div>
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<!-- Calendly inline widget end -->
+
+    <script>
+        function signOut() {
+        var auth2 = gapi.auth2.getAuthInstance();
+        auth2.signOut().then(function () {
+        console.log('User signed out.');
+    });
+  }
+    </script>
+</body>
+</html>
+
+
+

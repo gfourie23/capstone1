@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/static/add-pt.css"/>
+    <title>Add Patient</title>
+</head>
+<body>
+    
+    <ul>
+        <li><a href="/calendar">Calendar</a></li>
+        <li><a href="/pt-list">Patient List</a></li>
+        <li><a href="{{url_for('logout')}}">Logout</a></li>
+      </ul>
+
+      <h1>Add a New Patient</h1>
+      
+    <div>
+        <form id="new-pt-form" method="POST">
+            {{ form.hidden_tag() }}
+
+            {% for field in form 
+                if field.widget.input_type !='hidden' %}
+
+            <p class="add-form">
+                {{ field.label }}
+                {{ field(class="form-control", placeholder=field.label.text) }}
+
+                {% for error in field.errors %}
+        {{ error }}
+      {% endfor %}
+        </p>
+
+  {% endfor %}
+
+        <button type="submit">Add</button>
+        </form>
+    </body>
+</html>
